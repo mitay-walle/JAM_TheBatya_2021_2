@@ -1,0 +1,1752 @@
+fileFormatVersion: 2
+guid: cd6e00c030b7db742be34fe7e8a572fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5123713040915126173
+    second: free_tileset_version_6_0
+  - first:
+      213: -7030472222306728086
+    second: free_tileset_version_6_1
+  - first:
+      213: -8296696739124624284
+    second: free_tileset_version_6_2
+  - first:
+      213: 3363797260820515211
+    second: free_tileset_version_6_3
+  - first:
+      213: 1016830658727744011
+    second: free_tileset_version_6_4
+  - first:
+      213: -6114346886659502832
+    second: free_tileset_version_6_5
+  - first:
+      213: 7133156826488412639
+    second: free_tileset_version_6_6
+  - first:
+      213: 358541947763645522
+    second: free_tileset_version_6_7
+  - first:
+      213: 8863561188545371620
+    second: free_tileset_version_6_8
+  - first:
+      213: -6402283948960715442
+    second: free_tileset_version_6_9
+  - first:
+      213: -5709085470529981438
+    second: free_tileset_version_6_10
+  - first:
+      213: -3057825630041279897
+    second: free_tileset_version_6_11
+  - first:
+      213: 730959158747684516
+    second: free_tileset_version_6_12
+  - first:
+      213: -1634118163173537329
+    second: free_tileset_version_6_13
+  - first:
+      213: 1641829213150776227
+    second: free_tileset_version_6_14
+  - first:
+      213: 5970168109062969392
+    second: free_tileset_version_6_15
+  - first:
+      213: -4288369186206703041
+    second: free_tileset_version_6_16
+  - first:
+      213: 4545475432206428770
+    second: free_tileset_version_6_17
+  - first:
+      213: 357800502917411420
+    second: free_tileset_version_6_18
+  - first:
+      213: -7969137053338135575
+    second: free_tileset_version_6_19
+  - first:
+      213: -9019122016539314062
+    second: free_tileset_version_6_20
+  - first:
+      213: 2411794862299533489
+    second: free_tileset_version_6_21
+  - first:
+      213: 6104610687828365158
+    second: free_tileset_version_6_22
+  - first:
+      213: -2274948896301910644
+    second: free_tileset_version_6_23
+  - first:
+      213: 3132014700085828974
+    second: free_tileset_version_6_24
+  - first:
+      213: 2497750121856366076
+    second: free_tileset_version_6_25
+  - first:
+      213: -5067797717676736040
+    second: free_tileset_version_6_26
+  - first:
+      213: -1410548623764007810
+    second: free_tileset_version_6_27
+  - first:
+      213: 5132532036382289529
+    second: free_tileset_version_6_28
+  - first:
+      213: 3230670155303636497
+    second: free_tileset_version_6_29
+  - first:
+      213: -6003245377495242037
+    second: free_tileset_version_6_30
+  - first:
+      213: 3352674516796969827
+    second: free_tileset_version_6_31
+  - first:
+      213: -718304452972939300
+    second: free_tileset_version_6_32
+  - first:
+      213: -1485713416299974844
+    second: free_tileset_version_6_33
+  - first:
+      213: 8399638200602341450
+    second: free_tileset_version_6_34
+  - first:
+      213: 6160960250778560429
+    second: free_tileset_version_6_35
+  - first:
+      213: -5621192301359922523
+    second: free_tileset_version_6_36
+  - first:
+      213: -818511609966717475
+    second: free_tileset_version_6_37
+  - first:
+      213: -5110490662095893384
+    second: free_tileset_version_6_38
+  - first:
+      213: 6569938323062707586
+    second: free_tileset_version_6_39
+  - first:
+      213: 8950390544580827257
+    second: free_tileset_version_6_40
+  - first:
+      213: 5013261884655867167
+    second: free_tileset_version_6_41
+  - first:
+      213: -8182027952958408989
+    second: free_tileset_version_6_42
+  - first:
+      213: 9044237253684021952
+    second: free_tileset_version_6_43
+  - first:
+      213: -5815619072800133406
+    second: free_tileset_version_6_44
+  - first:
+      213: 3368046202534356378
+    second: free_tileset_version_6_45
+  - first:
+      213: -1845398266258438841
+    second: free_tileset_version_6_46
+  - first:
+      213: -2965988840004437639
+    second: free_tileset_version_6_47
+  - first:
+      213: 1230076154571672448
+    second: free_tileset_version_6_48
+  - first:
+      213: 5462654518462236335
+    second: free_tileset_version_6_49
+  - first:
+      213: 1620624653813898071
+    second: free_tileset_version_6_50
+  - first:
+      213: -4327237027779435661
+    second: free_tileset_version_6_51
+  - first:
+      213: -444422932962894584
+    second: free_tileset_version_6_52
+  - first:
+      213: -8562730706743628528
+    second: free_tileset_version_6_53
+  - first:
+      213: 1324139583058668996
+    second: free_tileset_version_6_54
+  - first:
+      213: 1471516201379823001
+    second: free_tileset_version_6_55
+  - first:
+      213: 2095216674829021011
+    second: free_tileset_version_6_56
+  - first:
+      213: 420694945220166569
+    second: free_tileset_version_6_57
+  - first:
+      213: -1951619082596999912
+    second: free_tileset_version_6_58
+  - first:
+      213: -3359674537353235445
+    second: free_tileset_version_6_59
+  - first:
+      213: 1071977331317403893
+    second: free_tileset_version_6_60
+  - first:
+      213: -4368054269705168336
+    second: free_tileset_version_6_61
+  - first:
+      213: -8127436675956584184
+    second: free_tileset_version_6_62
+  - first:
+      213: -8748236563254182820
+    second: free_tileset_version_6_63
+  - first:
+      213: 1805509372301843642
+    second: free_tileset_version_6_64
+  - first:
+      213: 9172766092388667281
+    second: free_tileset_version_6_65
+  - first:
+      213: 2395574021056038918
+    second: free_tileset_version_6_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 1
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: free_tileset_version_6_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 621
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9758c63dd51b1740800000000000000
+      internalID: 5123713040915126173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 620
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67082a43cebe6e90800000000000000
+      internalID: -7030472222306728086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 641
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464c55706463cdc80800000000000000
+      internalID: -8296696739124624284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 653
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8983ab59cb9eae20800000000000000
+      internalID: 3363797260820515211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 624
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b029132c8128c1e00800000000000000
+      internalID: 1016830658727744011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 624
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d052bd6e9752ba0800000000000000
+      internalID: -6114346886659502832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 624
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd99ef137501ef260800000000000000
+      internalID: 7133156826488412639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 637
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c5789700cc9f400800000000000000
+      internalID: 358541947763645522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 637
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed9f2890f1b10b70800000000000000
+      internalID: 8863561188545371620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_9
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 605
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4de20f4ba48627a0800000000000000
+      internalID: -6402283948960715442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_10
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 605
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20477b8330145c0b0800000000000000
+      internalID: -5709085470529981438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762fd406acb6095d0800000000000000
+      internalID: -3057825630041279897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 565
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae597a6b73e42a00800000000000000
+      internalID: 730959158747684516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 569
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9070340327259e0800000000000000
+      internalID: -1634118163173537329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 567
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab06b778f2f8c610800000000000000
+      internalID: 1641829213150776227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 598
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038501e834c4ad250800000000000000
+      internalID: 5970168109062969392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 595
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f322b6622f6ac74c0800000000000000
+      internalID: -4288369186206703041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 561
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aede792d5c41f30800000000000000
+      internalID: 4545475432206428770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_18
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 558
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5239d469a927f400800000000000000
+      internalID: 357800502917411420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 565
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e390618210f76190800000000000000
+      internalID: -7969137053338135575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_20
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 534
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278f442bf44a5d280800000000000000
+      internalID: -9019122016539314062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 506
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0d97626aa687120800000000000000
+      internalID: 2411794862299533489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 507
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f0014b31fe7b450800000000000000
+      internalID: 6104610687828365158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_23
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 496
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85f1c13802cd60e0800000000000000
+      internalID: -2274948896301910644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_24
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 496
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ddaed86c6277b20800000000000000
+      internalID: 3132014700085828974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_25
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 521
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5ffee808ac9a220800000000000000
+      internalID: 2497750121856366076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_26
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 498
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1c75c73d09ba9b0800000000000000
+      internalID: -5067797717676736040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_27
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 498
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7451260089bc6ce0800000000000000
+      internalID: -1410548623764007810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 434
+        width: 85
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ee0ea91ba6a3740800000000000000
+      internalID: 5132532036382289529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_29
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 436
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e4451b365a5dc20800000000000000
+      internalID: 3230670155303636497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_30
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 439
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcae3eeb22030bca0800000000000000
+      internalID: -6003245377495242037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_31
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 470
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3631035b5b7178e20800000000000000
+      internalID: 3352674516796969827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_32
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 467
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd777ffd7e11806f0800000000000000
+      internalID: -718304452972939300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 394
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f686ff48fa16be0800000000000000
+      internalID: -1485713416299974844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_34
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 462
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4034b4b072819470800000000000000
+      internalID: 8399638200602341450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_35
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 463
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da725f6b4b0208550800000000000000
+      internalID: 6160960250778560429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_36
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 434
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2084f52638df1b0800000000000000
+      internalID: -5621192301359922523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_37
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 408
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd59663070014a4f0800000000000000
+      internalID: -818511609966717475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_38
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 424
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cc2d1c1d3e319b0800000000000000
+      internalID: -5110490662095893384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_39
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 425
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285d066881c1d2b50800000000000000
+      internalID: 6569938323062707586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 365
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97851c277cc263c70800000000000000
+      internalID: 8950390544580827257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 365
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f151be86f1fa29540800000000000000
+      internalID: 5013261884655867167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_42
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 406
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f8915de8937e80800000000000000
+      internalID: -8182027952958408989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_43
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 389
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cac0322dd5938d70800000000000000
+      internalID: 9044237253684021952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_44
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 389
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eee2c80445ca4fa0800000000000000
+      internalID: -5815619072800133406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_45
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95e9213d24bdbe20800000000000000
+      internalID: 3368046202534356378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7454b8edd04d366e0800000000000000
+      internalID: -1845398266258438841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_47
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97933cf4dd0b6d6d0800000000000000
+      internalID: -2965988840004437639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_48
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 316
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b4cefcebb121110800000000000000
+      internalID: 1230076154571672448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_49
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 316
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6cf97975f3fcb40800000000000000
+      internalID: 5462654518462236335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 313
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b51d4498d9d7610800000000000000
+      internalID: 1620624653813898071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 313
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3732a4499d092f3c0800000000000000
+      internalID: -4327237027779435661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_52
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d95b672b715d9f0800000000000000
+      internalID: -444422932962894584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 325
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d673d1ac11b2980800000000000000
+      internalID: -8562730706743628528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_54
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 171
+        width: 224
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdee396fe9406210800000000000000
+      internalID: 1324139583058668996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_55
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 273
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99df9705030eb6410800000000000000
+      internalID: 1471516201379823001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_56
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 245
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fa8aef674b31d10800000000000000
+      internalID: 2095216674829021011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_57
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 268
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a386a0e2db96d500800000000000000
+      internalID: 420694945220166569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_58
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 209
+        width: 120
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d9ee4d8c47ae4e0800000000000000
+      internalID: -1951619082596999912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_59
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 174
+        width: 120
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04b2200fc90061d0800000000000000
+      internalID: -3359674537353235445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 134
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0f17804bd60ee00800000000000000
+      internalID: 1071977331317403893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_61
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 70
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a589ed8cd8163c0800000000000000
+      internalID: -4368054269705168336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_62
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 70
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801502b776b853f80800000000000000
+      internalID: -8127436675956584184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_63
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 70
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c76242235089680800000000000000
+      internalID: -8748236563254182820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_64
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 70
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc90b645357e0910800000000000000
+      internalID: 1805509372301843642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_65
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 60
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f039069263c4f70800000000000000
+      internalID: 9172766092388667281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_tileset_version_6_66
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 193
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608033e31e9ce3120800000000000000
+      internalID: 2395574021056038918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
