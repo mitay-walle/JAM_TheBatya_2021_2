@@ -14,6 +14,7 @@ namespace Actor
         public float PostDelay;
         
         public UnityEvent OnAction;
+        public UnityEvent OnActionEnd;
 
         public virtual IEnumerator OnActionCoroutine(Actor actor)
         {
@@ -35,7 +36,10 @@ namespace Actor
                 yield return OnOnceActionCoroutine(actor);
             }
 
+            OnActionEnd?.Invoke();
+                
             yield return new WaitForSeconds(PostDelay);
+            
             gameObject.SetActive(false);
         }
 
