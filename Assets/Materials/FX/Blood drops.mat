@@ -50,7 +50,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _Multiplier: 1
+    - _Multiplier: 0.2
     - _Treshold: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
