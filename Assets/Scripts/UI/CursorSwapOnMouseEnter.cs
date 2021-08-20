@@ -46,7 +46,6 @@ namespace UI
                 if (data.ContainsKey(state))
                 {
                     Cursor.SetCursor(data[state].sprite, pivot, cursorMode);
-                    Debug.Log($"{state} {name}",this);
                 }
             }
         }

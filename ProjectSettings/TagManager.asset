@@ -50,3 +50,6 @@ TagManager:
   - name: UI
     uniqueID: 3018981951
     locked: 0
+  - name: Actors
+    uniqueID: 3481659065
+    locked: 0
