@@ -24,7 +24,7 @@ namespace UI
             
             if (!WorldBounds.Contains(pos))
             {
-                return;
+                pos = WorldBounds.ClosestPoint(pos);
             }
 
             pos.z = transform.position.z;

@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine;
 
 namespace Actor
 {
@@ -6,7 +7,7 @@ namespace Actor
     {
         protected override IEnumerator OnOnceActionCoroutine(Actor actor)
         {
-            yield break;
+            yield return new WaitForSeconds(TimeOnce);
         }
     }
 }

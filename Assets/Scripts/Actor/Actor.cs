@@ -1,31 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Actor
 {
     public class Actor : MonoBehaviour
     {
-        [SerializeField] private List<ActorAction> actions = new List<ActorAction>();
+        [SerializeField] private Sequence DefaultSequence;
+        private Sequence current;
 
         private void OnEnable()
         {
-            foreach (ActorAction action in actions)
-            {
-                action.gameObject.SetActive(false);
-            }
-            StartCoroutine(EnableCoroutine());
+            PlaySequence(DefaultSequence);
         }
 
-        private IEnumerator EnableCoroutine()
+        public void PlaySequence(Sequence sequence)
         {
-            while (true)
+            if (current != null)
             {
-                for (int i = 0; i < actions.Count; i++)
-                {
-                    yield return actions[i].OnActionCoroutine(this);
-                }
+                StopCoroutine(current.OnActionCoroutine(this));
             }
+            current = sequence;
+            current.StartCoroutine(sequence.OnActionCoroutine(this));
         }
     }
 }

@@ -7,16 +7,15 @@ using UnityEngine.Events;
 
 namespace Actor
 {
-    public abstract class ActorAction : MonoBehaviour,IHierarchyIconBehaviour
+    public abstract class ActorAction : MonoBehaviour, IHierarchyIconBehaviour
     {
-        public float PreDelay;
-        public bool Loop;
-        [ShowIf(nameof(Loop))]public int LoopCount = 1;
-        public float TimeOnce = 1;
-        public float PostDelay;
-        
-        public UnityEvent OnAction;
-        public UnityEvent OnActionEnd;
+        public bool PlayNextImmediatly;
+        [HorizontalGroup("Time",LabelWidth = 60)]public float PreDelay;
+        [HorizontalGroup("Time",LabelWidth = 60)]public float TimeOnce = 1;
+        [HorizontalGroup("Time",LabelWidth = 60)]public float PostDelay;
+
+        [FoldoutGroup("Events")]public UnityEvent OnAction;
+        [FoldoutGroup("Events")]public UnityEvent OnActionEnd;
 
         public virtual IEnumerator OnActionCoroutine(Actor actor)
         {
@@ -24,29 +23,17 @@ namespace Actor
             yield return new WaitForSeconds(PreDelay);
 
             OnAction?.Invoke();
-            if (Loop)
-            {
-                int count = 0;
-                while (LoopCount > count)
-                {
-                    yield return OnOnceActionCoroutine(actor);
-                    count++;
-                }
-            }
-            else
-            {
-                yield return OnOnceActionCoroutine(actor);
-            }
+            yield return OnOnceActionCoroutine(actor);
 
             OnActionEnd?.Invoke();
-                
+
             yield return new WaitForSeconds(PostDelay);
-            
+
             gameObject.SetActive(false);
         }
 
         protected abstract IEnumerator OnOnceActionCoroutine(Actor actor);
- 
+
         public virtual string EditorIconName => "Icons/ActorAction";
         public virtual Color EditorIconBGColor => Color.clear;
         public virtual Type EditorIconBuiltInType => null;

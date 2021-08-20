@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[ExecuteAlways]
 public class StickToTransform : MonoBehaviour
 {
 	public Transform StickTo;

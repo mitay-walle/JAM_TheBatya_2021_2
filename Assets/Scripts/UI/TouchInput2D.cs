@@ -9,7 +9,6 @@ namespace UI
         private Camera cam;
         private List<GameObject> touchList = new List<GameObject>();
         private List<GameObject> touchListOld = new List<GameObject>();
-        private RaycastHit2D hit;
 
         void Start()
         {
@@ -22,36 +21,38 @@ namespace UI
             bool isMousePressing = Input.GetMouseButton(0);
             bool isMouseDown = Input.GetMouseButtonDown(0);
             bool isMouseUp = Input.GetMouseButtonUp(0);
+            Vector3 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
+            SendMessageOptions reciever = SendMessageOptions.DontRequireReceiver;
 
-            hit = Physics2D.Raycast(cam.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 10f, touchInputMask);
+            var hit = Physics2D.OverlapPoint(mouseWorldPos, touchInputMask);
 
             touchListOld.Clear();
             touchListOld.AddRange(touchList);
             touchList.Clear();
 
+
             if (isMousePressing || isMouseDown || isMouseUp)
             {
-                if (hit.collider != null)
+                if (hit != null)
                 {
                     GameObject recipent = hit.transform.gameObject;
                     touchList.Add(recipent);
 
+                    Vector3 closest = hit.ClosestPoint(mouseWorldPos);
                     if (isMouseDown)
                     {
-                        recipent.SendMessage(nameof(ITouchReciever.OnTouchDown), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        Debug.Log($"{recipent.name}.OnTouchDown()");
+                        recipent.SendMessage(nameof(ITouchReciever.OnTouchDown), closest, reciever);
                     }
 
                     if (isMouseUp)
                     {
-                        recipent.SendMessage(nameof(ITouchReciever.OnTouchUp), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        recipent.SendMessage(nameof(ITouchReciever.OnTouchUp), closest, reciever);
                     }
 
                     if (isMousePressing)
                     {
-                        recipent.SendMessage(nameof(ITouchReciever.OnTouchStay), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        recipent.SendMessage(nameof(ITouchReciever.OnTouchStay), closest, reciever);
                     }
                 }
 
@@ -59,21 +60,20 @@ namespace UI
                 {
                     if (!touchList.Contains(g) && g != null)
                     {
-                        g.SendMessage(nameof(ITouchReciever.OnTouchExit), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        g.SendMessage(nameof(ITouchReciever.OnTouchExit), mouseWorldPos, reciever);
                     }
                 }
             }
             else
             {
-                if (hit.collider != null)
+                if (hit != null)
                 {
-                    GameObject recipent = hit.transform.gameObject;
+                    GameObject recipent = hit.gameObject;
+                    Vector3 closest = hit.ClosestPoint(mouseWorldPos);
 
                     if (!touchListOld.Contains(recipent))
                     {
-                        recipent.SendMessage(nameof(ITouchReciever.OnTouchEnter), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        recipent.SendMessage(nameof(ITouchReciever.OnTouchEnter), closest, reciever);
                     }
 
                     if (!touchList.Contains(recipent)) touchList.Add(recipent);
@@ -83,8 +83,7 @@ namespace UI
                 {
                     if (!touchList.Contains(obj))
                     {
-                        obj.SendMessage(nameof(ITouchReciever.OnTouchExit), hit.point,
-                            SendMessageOptions.DontRequireReceiver);
+                        obj.SendMessage(nameof(ITouchReciever.OnTouchExit), mouseWorldPos, reciever);
                     }
                 }
             }
