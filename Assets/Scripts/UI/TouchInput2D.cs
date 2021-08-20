@@ -17,11 +17,17 @@ namespace UI
 
         void Update()
         {
-#if UNITY_EDITOR || UNITY_STANDALONE
             bool isMousePressing = Input.GetMouseButton(0);
             bool isMouseDown = Input.GetMouseButtonDown(0);
             bool isMouseUp = Input.GetMouseButtonUp(0);
             Vector3 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+            if (isMouseDown)
+            {
+                var ray = cam.ScreenPointToRay(Input.mousePosition);
+                Debug.DrawRay(ray.origin, ray.direction, Color.red, 5);
+            }
+
             SendMessageOptions reciever = SendMessageOptions.DontRequireReceiver;
 
             var hit = Physics2D.OverlapPoint(mouseWorldPos, touchInputMask);
@@ -87,7 +93,6 @@ namespace UI
                     }
                 }
             }
-#endif
         }
     }
 }

@@ -19,7 +19,6 @@ namespace Actor
 
         public virtual IEnumerator OnActionCoroutine(Actor actor)
         {
-            gameObject.SetActive(true);
             yield return new WaitForSeconds(PreDelay);
 
             OnAction?.Invoke();

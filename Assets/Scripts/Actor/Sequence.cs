@@ -9,9 +9,12 @@ namespace Actor
 {
     public class Sequence : ActorAction
     {
+        public bool IsParent;
         [SerializeField] private bool loop;
 
         [SerializeField] private List<ActorAction> actions = new List<ActorAction>();
+
+        public bool Contains(Sequence sequence) => actions.Contains(sequence);
 
         public void OnEnable()
         {
@@ -29,6 +32,7 @@ namespace Actor
             {
                 for (int i = 0; i < actions.Count; i++)
                 {
+                    actions[i].gameObject.SetActive(true);
                     if (actions[i].PlayNextImmediatly)
                     {
                         StartCoroutine(actions[i].OnActionCoroutine(actor));
@@ -42,6 +46,7 @@ namespace Actor
 
                 counter++;
             }
+            gameObject.SetActive(false);
         }
 
         [Button(DirtyOnClick = true)]
@@ -56,5 +61,6 @@ namespace Actor
         }
         
         public override string EditorIconName => "Icons/Sequence";
+
     }
 }

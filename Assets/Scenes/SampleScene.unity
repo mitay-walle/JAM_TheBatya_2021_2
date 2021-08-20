@@ -5389,7 +5389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &130909596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16204,6 +16204,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  IsParent: 1
   loop: 0
   actions:
   - {fileID: 433303568}
@@ -16218,12 +16219,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335870642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RuntimeOnly: 0
+  RuntimeOnly: 1
 --- !u!1 &350709894
 GameObject:
   m_ObjectHideFlags: 0
@@ -16801,7 +16802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &402064138
 Transform:
   m_ObjectHideFlags: 0
@@ -16853,6 +16854,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  IsParent: 0
   loop: 0
   actions:
   - {fileID: 1458498130}
@@ -17256,7 +17258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayNextImmediatly: 0
   PreDelay: 0
-  TimeOnce: 1
+  TimeOnce: 2
   PostDelay: 0
   OnAction:
     m_PersistentCalls:
@@ -17327,6 +17329,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  IsParent: 1
   loop: 1
   actions:
   - {fileID: 509649531}
@@ -17343,12 +17346,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435065446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RuntimeOnly: 0
+  RuntimeOnly: 1
 --- !u!1 &444275777
 GameObject:
   m_ObjectHideFlags: 0
@@ -28335,17 +28338,17 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1161484109}
-        m_TargetAssemblyTypeName: Actor.Actor, Assembly-CSharp
-        m_MethodName: PlaySequence
-        m_Mode: 2
+      - m_Target: {fileID: 335870642}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 335870644}
-          m_ObjectArgumentAssemblyTypeName: Actor.Sequence, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!61 &657633320
 BoxCollider2D:
@@ -28387,18 +28390,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 2800000, guid: a62b26a3f47b45f4eb55eddee3d935b1, type: 3}
   pivot: {x: 0, y: 1}
-  setOnStart: 1
+  setOnStart: 0
   cursorMode: 0
   data:
-    m_Keys: 05000000010000000200000004000000
+    m_Keys: 01000000020000000400000005000000
     m_Values:
-    - sprite: {fileID: 2800000, guid: e98516e422301464a88a228820bb9c27, type: 3}
-      pivot: {x: 0.38, y: 0.87}
     - sprite: {fileID: 2800000, guid: a62b26a3f47b45f4eb55eddee3d935b1, type: 3}
       pivot: {x: 0.38, y: 0.87}
     - sprite: {fileID: 2800000, guid: e577f7ae4285bfc43818187c60a2bccd, type: 3}
       pivot: {x: 0.38, y: 0.87}
     - sprite: {fileID: 2800000, guid: a62b26a3f47b45f4eb55eddee3d935b1, type: 3}
+      pivot: {x: 0.38, y: 0.87}
+    - sprite: {fileID: 2800000, guid: e98516e422301464a88a228820bb9c27, type: 3}
       pivot: {x: 0.38, y: 0.87}
 --- !u!1 &661055532
 GameObject:
@@ -30296,7 +30299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &881467881
 RectTransform:
   m_ObjectHideFlags: 0
@@ -68976,6 +68979,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  IsParent: 0
   loop: 1
   actions:
   - {fileID: 290686841}
@@ -76078,9 +76082,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 989.39636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137678450
 MonoBehaviour:

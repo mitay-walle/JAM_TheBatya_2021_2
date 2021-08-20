@@ -9,17 +9,18 @@ namespace Actor
 
         private void OnEnable()
         {
+            current = null;
             PlaySequence(DefaultSequence);
         }
 
         public void PlaySequence(Sequence sequence)
         {
-            if (current != null)
+            if (current != null && current != sequence && !current.Contains(sequence) && sequence.IsParent)
             {
-                StopCoroutine(current.OnActionCoroutine(this));
+                current.gameObject.SetActive(false);
             }
             current = sequence;
-            current.StartCoroutine(sequence.OnActionCoroutine(this));
+            current.StartCoroutine(current.OnActionCoroutine(this));
         }
     }
 }
