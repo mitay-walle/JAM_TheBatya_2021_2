@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
+using Plugins.mitaywalle.HierarchyIcons;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Actor
 {
-    public abstract class ActorAction : MonoBehaviour
+    public abstract class ActorAction : MonoBehaviour,IHierarchyIconBehaviour
     {
         public float PreDelay;
         public bool Loop;
@@ -44,5 +46,9 @@ namespace Actor
         }
 
         protected abstract IEnumerator OnOnceActionCoroutine(Actor actor);
+ 
+        public virtual string EditorIconName => "Icons/ActorAction";
+        public virtual Color EditorIconBGColor => Color.clear;
+        public virtual Type EditorIconBuiltInType => null;
     }
 }

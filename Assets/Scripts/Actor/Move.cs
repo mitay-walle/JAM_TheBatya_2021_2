@@ -32,5 +32,7 @@ namespace Actor
                 Gizmos.DrawLine(From.position,To.position);
             }
         }
+        
+        public override string EditorIconName => "Icons/ActorActionMove";
     }
 }

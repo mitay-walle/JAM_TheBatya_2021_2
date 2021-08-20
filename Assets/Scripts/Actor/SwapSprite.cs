@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,5 +31,7 @@ namespace Actor
                 yield return new WaitForSeconds(deltaTime);
             }
         }
+
+        public override Type EditorIconBuiltInType => typeof(SpriteRenderer);
     }
 }
