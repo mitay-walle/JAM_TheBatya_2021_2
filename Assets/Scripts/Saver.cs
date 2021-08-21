@@ -9,6 +9,7 @@ public class Saver : MonoBehaviour
     public bool DebugIntro;
     public bool SkipIntro;
     [SerializeField] private Animated Finish;
+    [SerializeField] private Animated Scene1;
     [SerializeField] private SwitchableGoParent _switch;
     [SerializeField] private int _skipIndex = 2;
 
@@ -42,6 +43,7 @@ public class Saver : MonoBehaviour
         else
         {
             _switch.Show(0);
+            Scene1.ResetValue0();
         }
     }
 

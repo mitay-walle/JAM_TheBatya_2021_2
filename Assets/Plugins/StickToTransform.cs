@@ -13,6 +13,7 @@ namespace Plugins
         [SerializeField] protected bool z = true;
         [SerializeField] protected bool Rotation;
         [SerializeField] protected bool Scale;
+        [SerializeField] protected Transform cachTr;
         
         [Header("Update")]
         public bool Simple = true;
@@ -24,7 +25,6 @@ namespace Plugins
         /// </summary>
         public bool ComparePositionBeforeChange;
 
-        protected Transform cachTr;
 
         public virtual void FixedUpdate()
         {
@@ -40,7 +40,7 @@ namespace Plugins
 
         public virtual void Init()
         {
-            cachTr = transform;
+            if (!cachTr) cachTr = transform;
         }
 
         public virtual void Update()

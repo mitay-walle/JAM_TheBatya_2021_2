@@ -32,6 +32,11 @@ namespace Plugins.Pulsating
         public abstract void SetAlpha(float alpha);
         public abstract void Animate(float time, float deltaTime);
 
+        public void Enable(float disableTimer)
+        {
+            Enable(true,disableTimer:disableTimer);
+        }
+        
         public abstract void Enable(bool state = true, float startAlpha = 0f, float disableTimer = float.MaxValue,
             float finishAlpha = 1f);
 
@@ -93,6 +98,7 @@ namespace Plugins.Pulsating
 
             AlphaApply();
         }
+        
 
         public override void Enable(bool state = true, float startAlpha = 0f, float disableTimer = float.MaxValue,
             float finishAlpha = 1f)
