@@ -25,32 +25,26 @@ public class Saver : MonoBehaviour
         if (!PlayerPrefs.HasKey(INTRO))
         {
             PlayerPrefs.SetInt(INTRO, 0);
-            Debug.Log("Create pref");
         }
         else
         {
             SkipIntro = PlayerPrefs.GetInt(INTRO) == 1;
-            Debug.Log("Get existing pref");
         }
 
         if (SkipIntro)
         {
             _switch.Show(_skipIndex);
-            Debug.Log("Skip intro");
         }
     }
 
-    [Button]
     public void Save()
     {
-        Debug.Log("Save");
         PlayerPrefs.SetInt(INTRO,1);
     }
     
     [Button]
     public void Clear()
     {
-        Debug.Log("Clear");
         PlayerPrefs.DeleteAll();
     }
     

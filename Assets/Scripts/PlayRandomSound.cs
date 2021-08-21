@@ -46,7 +46,12 @@ public class PlayRandomSound : MonoBehaviour
 
         if (_usePitch) AS.pitch = _pitch.Random();
 
-        var clip = _clips.Random();
+        AudioClip clip = AS.clip;
+        
+        if (_clips != null && _clips.Length > 0)
+        {
+            clip = _clips.Random();
+        }
 
         if (_oneShot)
         {
