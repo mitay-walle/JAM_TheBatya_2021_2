@@ -1,11 +1,15 @@
 ﻿using UnityEngine.UI;
 
-public class PulsatingGraphic : PulsatingUI<Graphic>
+namespace Plugins.Pulsating
 {
-	public override void AlphaApply()
+	public class PulsatingGraphic : PulsatingUI<Graphic>
 	{
-		var color = Animated.color;
-		color.a = Alpha;
-		Animated.color = color;
+		public override void AlphaApply()
+		{
+			var color = Animated.color;
+			color.a = Alpha;
+			Animated.color = color;
+			base.AlphaApply();
+		}
 	}
 }

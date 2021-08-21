@@ -3,10 +3,14 @@
 
 #endif
 
-public sealed class ScalePulsatingUI : PulsatingUI<Transform>
+namespace Plugins.Pulsating
 {
-	public override void AlphaApply()
+	public sealed class ScalePulsatingUI : PulsatingUI<Transform>
 	{
-		Animated.localScale = new Vector3(Alpha,Alpha,Alpha);
+		public override void AlphaApply()
+		{
+			Animated.localScale = new Vector3(Alpha,Alpha,Alpha);
+			base.AlphaApply();
+		}
 	}
 }

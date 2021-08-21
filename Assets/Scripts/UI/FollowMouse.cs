@@ -16,8 +16,8 @@ namespace UI
         void Update()
         {
             Vector3 pos = Input.mousePosition;
-            // if (pos.x < 0 || pos.y < 0) return;
-            // if (pos.x > Screen.width || pos.y > Screen.height) return;
+            if (pos.x < 0 || pos.y < 0) return;
+            if (pos.x > Screen.width || pos.y > Screen.height) return;
             pos = cam.ScreenToWorldPoint(pos);
             pos.z = 0;
             mouseWorldPos = pos;

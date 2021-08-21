@@ -1,9 +1,9 @@
 ﻿using TMPro;
 using UnityEditor;
-using UnityEditor.ShortcutManagement;
 using UnityEngine;
 using UnityEngine.UI;
 #if UNITY_EDITOR
+using UnityEditor.ShortcutManagement;
 
 #endif
 namespace Plugins.Extensions

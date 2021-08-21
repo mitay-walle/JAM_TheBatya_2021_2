@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
-#if UNITY_EDITOR
 
-#endif
-
-public class PulsatingCGroup : PulsatingUI<CanvasGroup>
+namespace Plugins.Pulsating
 {
-	public override void AlphaApply()
+	public class PulsatingCGroup : PulsatingUI<CanvasGroup>
 	{
-		Animated.alpha = Alpha;
+		public override void AlphaApply()
+		{
+			base.AlphaApply();
+			Animated.alpha = Alpha;
+		}
 	}
 }

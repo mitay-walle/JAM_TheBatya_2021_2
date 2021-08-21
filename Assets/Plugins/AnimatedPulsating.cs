@@ -1,4 +1,6 @@
-﻿namespace Plugins.Own.Animated
+﻿using Plugins.Pulsating;
+
+namespace Plugins.Own.Animated
 {
     public class AnimatedPulsating : AnimatedGeneric<Pulsating_Base>
     {

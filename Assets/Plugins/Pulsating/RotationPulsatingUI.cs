@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 
-public sealed class RotationPulsatingUI : PulsatingUI<Transform>
+namespace Plugins.Pulsating
 {
-	public Vector3 MinPosition;
-	public Vector3 MaxPosition;
-	
-	public override void AlphaApply()
+	public sealed class RotationPulsatingUI : PulsatingUI<Transform>
 	{
-		Animated.localRotation = Quaternion.Euler(Vector3.Lerp(MinPosition,MaxPosition,Alpha));
+		public Vector3 MinPosition;
+		public Vector3 MaxPosition;
+	
+		public override void AlphaApply()
+		{
+			Animated.localRotation = Quaternion.Euler(Vector3.Lerp(MinPosition,MaxPosition,Alpha));
+			base.AlphaApply();
+		}
 	}
 }

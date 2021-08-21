@@ -10,6 +10,7 @@ namespace Actor
     public class Sequence : ActorAction
     {
         [SerializeField] protected bool Debugging;
+        [SerializeField] protected Actor actor;
         public bool IsParent;
         [SerializeField] private bool loop;
 
@@ -19,7 +20,16 @@ namespace Actor
 
         public void Play()
         {
-            transform.root.GetComponentInChildren<Actor>().PlaySequence(this);
+            if (!actor)
+            {
+                actor = transform.root.GetComponentInChildren<Actor>();
+            }
+
+            if (actor) actor.PlaySequence(this);
+            else
+            {
+                Debug.LogError($"[ Sequence ] {name}.Play() Actor null! cant found",this);
+            }
         }
 
         protected override IEnumerator OnOnceActionCoroutine(Actor actor)
@@ -28,6 +38,7 @@ namespace Actor
             {
                 action.gameObject.SetActive(false);
             }
+
             while (true)
             {
                 for (int i = 0; i < actions.Count; i++)
@@ -47,14 +58,16 @@ namespace Actor
                         {
                             yield return actions[i].OnActionCoroutine(actor);
                         }
-                        if (Debugging) Debug.LogError($"action '{actions[i].name}'"); 
+
+                        if (Debugging) Debug.LogError($"action '{actions[i].name}'");
                     }
                 }
 
                 if (!loop) break;
-                
+
                 if (Debugging) Debug.LogError($"break");
             }
+
             if (Debugging) Debug.LogError($"finish sequence '{name}'");
             gameObject.SetActive(false);
             yield return null;
@@ -67,11 +80,11 @@ namespace Actor
             Undo.RecordObject(this, "reset");
 #endif
             actions.Clear();
-            var sequences = GetComponentsInChildren<Sequence>(true).ToList(); 
-            actions = GetComponentsInChildren<ActorAction>(true).Where(t => t != this && !sequences.Exists(s=>s.actions.Contains(t))).ToList();
+            var sequences = GetComponentsInChildren<Sequence>(true).ToList();
+            actions = GetComponentsInChildren<ActorAction>(true)
+                .Where(t => t != this && !sequences.Exists(s => s.actions.Contains(t))).ToList();
         }
-        
-        public override string EditorIconName => "Icons/Sequence";
 
+        public override string EditorIconName => "Icons/Sequence";
     }
 }
