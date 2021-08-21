@@ -30,13 +30,19 @@ namespace UI
 
             SendMessageOptions reciever = SendMessageOptions.DontRequireReceiver;
 
-            var hit = Physics2D.OverlapPoint(mouseWorldPos, touchInputMask);
+            var hit = Physics2D.OverlapPoint(mouseWorldPos, touchInputMask,-100,100);
 
             touchListOld.Clear();
             touchListOld.AddRange(touchList);
             touchList.Clear();
 
 
+            if (isMouseDown)
+            {
+                Debug.Log($"OnTouchDown()");   
+            }
+            
+            
             if (isMousePressing || isMouseDown || isMouseUp)
             {
                 if (hit != null)
@@ -61,7 +67,10 @@ namespace UI
                         recipent.SendMessage(nameof(ITouchReciever.OnTouchStay), closest, reciever);
                     }
                 }
-
+                else
+                {
+                    Debug.LogError($"OnTouchDown() MISS-CLICK hit == null!");
+                }
                 foreach (GameObject g in touchListOld)
                 {
                     if (!touchList.Contains(g) && g != null)
