@@ -12,6 +12,13 @@ namespace Gameplay
         [SerializeField] private Actor.Actor _mother;
         [SerializeField] private Sequence _phoneSequence;
         [SerializeField] private Sequence _deathRingSequence;
+        
+        // Defaults
+        
+        [Header("Defaults"),SerializeField] private GameObject Intro;
+        [SerializeField] private SwitchableGoParent IntroScenes;
+        [SerializeField] private GameObject ActorScenes;
+        [SerializeField] private SwitchableGoParent _motherActions;
 
         [ShowInInspector] private bool _isRingInWater;
 
@@ -66,6 +73,22 @@ namespace Gameplay
         {
             if (!_isRingInWater) _ringSwitch.Show(2);
             _isRingInWater = true;
+        }
+
+        [Button]
+        private void EditScenes()
+        {
+            Intro.SetActive(false);
+            ActorScenes.SetActive(true);
+        }
+        
+        [Button]
+        public void SetDefaults()
+        {
+            _motherActions.Show(0);
+            Intro.SetActive(true);
+            IntroScenes.Show(0);
+            ActorScenes.SetActive(false);
         }
     }
 }

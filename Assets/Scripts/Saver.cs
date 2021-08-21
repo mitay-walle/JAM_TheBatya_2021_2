@@ -1,3 +1,4 @@
+using Gameplay;
 using Plugins.Own.Animated;
 using Plugins.Switchable;
 using Sirenix.OdinInspector;
@@ -12,10 +13,13 @@ public class Saver : MonoBehaviour
     [SerializeField] private Animated Scene1;
     [SerializeField] private SwitchableGoParent _switch;
     [SerializeField] private int _skipIndex = 2;
+    [SerializeField] private GameplayEvents _gameplay;
 
 
     private void Awake()
     {
+        _gameplay.SetDefaults();
+        
         Finish.OnPlayAction -= Save;
         Finish.OnPlayAction += Save;
 
