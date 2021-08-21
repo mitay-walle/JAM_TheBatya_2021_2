@@ -28,12 +28,4 @@ public static class AudioSourceExtensions
         animCurve.SmoothTangents(1,.025f);
         AS.SetCustomCurve(AudioSourceCurveType.CustomRolloff,animCurve);
     }
-	
-	public static AudioClip Random(this  AudioClip[] clips)
-    {
-        if (clips == null) return null;
-        if (clips.Length == 0) return null;
-
-        return clips[UnityEngine.Random.Range(0, clips.Length)];
-    }
 }
