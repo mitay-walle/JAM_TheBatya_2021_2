@@ -24,6 +24,8 @@ public class Saver : MonoBehaviour
 
     private void Load()
     {
+        Debug.Log("Load");
+
         if (!PlayerPrefs.HasKey(INTRO))
         {
             PlayerPrefs.SetInt(INTRO, 0);
@@ -38,12 +40,14 @@ public class Saver : MonoBehaviour
 #if UNITY_EDITOR
             if (DebugIntro) return;
 #endif
+            Debug.Log("Skip Intro");
             _switch.Show(_skipIndex);
         }
         else
         {
+            Debug.Log("Show full Intro");
             _switch.Show(0);
-            Scene1.ResetValue0();
+            Scene1.Play();
         }
     }
 

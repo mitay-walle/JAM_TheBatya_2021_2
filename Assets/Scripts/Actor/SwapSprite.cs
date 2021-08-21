@@ -7,6 +7,7 @@ namespace Actor
 {
     public class SwapSprite : ActorAction
     {
+        [SerializeField] private bool Debugging;
         [SerializeField] private bool LoopAnimation = true;
         [SerializeField] private int fps = 30;
         [SerializeField] private SpriteRenderer _renderer;
@@ -23,6 +24,10 @@ namespace Actor
                 if (i < sprites.Count)
                 {
                     _renderer.sprite = sprites[i];
+                    if (Debugging)
+                    {
+                        Debug.Log($"[ SwapSprite] {name} set sprite {sprites[i].name}",this);
+                    }
                 }
 
                 i++;
