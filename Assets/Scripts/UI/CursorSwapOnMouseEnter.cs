@@ -24,6 +24,11 @@ namespace UI
         [SerializeField] private SerializedDictionary<ITouchReciever.eTouchState, CursorState> data =
             new SerializedDictionary<ITouchReciever.eTouchState, CursorState>();
 
+
+        private bool isHovered;
+        private bool isClicked;
+
+
         private void Start()
         {
             if (setOnStart)
@@ -39,7 +44,7 @@ namespace UI
             if (state == ITouchReciever.eTouchState.Exit && !data.ContainsKey(ITouchReciever.eTouchState.Exit))
             {
                 Cursor.SetCursor(lastSprite, lastPivot, cursorMode);
-                Debug.Log($"{state} {name}",this);
+                Debug.Log($"{state} {name}", this);
             }
             else
             {
@@ -50,11 +55,50 @@ namespace UI
             }
         }
 
-        public void OnTouchExit() => TrySetState(ITouchReciever.eTouchState.Exit);
-        public void OnTouchEnter() => TrySetState(ITouchReciever.eTouchState.Enter);
+        public void OnTouchExit()
+        {
+            TrySetState(ITouchReciever.eTouchState.Exit);
+            isHovered = false;
+            isClicked = false;
+        }
 
-        public void OnTouchDown() => TrySetState(ITouchReciever.eTouchState.Down);
-        public void OnTouchUp() => TrySetState(ITouchReciever.eTouchState.Up);
-        public void OnTouchStay()=>TrySetState(ITouchReciever.eTouchState.Stay);
+        public void OnTouchEnter()
+        {
+            TrySetState(ITouchReciever.eTouchState.Enter);
+            isHovered = true;
+        }
+
+        public void OnTouchDown()
+        {
+            TrySetState(ITouchReciever.eTouchState.Down);
+            isClicked = true;
+        }
+
+        public void OnTouchUp()
+        {
+            TrySetState(ITouchReciever.eTouchState.Up);
+            isClicked = false;
+        }
+
+        public void OnTouchStay()
+        {
+            if (!isHovered) OnTouchEnter();
+            if (!isClicked) OnTouchDown();
+
+            TrySetState(ITouchReciever.eTouchState.Stay);
+        }
+
+        private void OnDisable()
+        {
+            if (isHovered)
+            {
+                OnTouchExit();
+            }
+
+            if (isClicked)
+            {
+                OnTouchUp();
+            }
+        }
     }
 }

@@ -16913,6 +16913,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnActionEnd:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 205119700}
         m_TargetAssemblyTypeName: Plugins.Switchable.SwitchableGoParent, Assembly-CSharp-firstpass
         m_MethodName: Show
@@ -16925,9 +16928,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnActionEnd:
-    m_PersistentCalls:
-      m_Calls: []
   IsParent: 0
   loop: 0
   actions:
