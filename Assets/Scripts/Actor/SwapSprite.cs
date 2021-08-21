@@ -9,6 +9,8 @@ namespace Actor
     {
         [SerializeField] private bool Debugging;
         [SerializeField] private bool LoopAnimation = true;
+        [SerializeField] private bool flipX;
+        [SerializeField] private bool flipY;
         [SerializeField] private int fps = 30;
         [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private List<Sprite> sprites = new List<Sprite>();
@@ -16,6 +18,8 @@ namespace Actor
 
         protected override IEnumerator OnOnceActionCoroutine(Actor actor)
         {
+            _renderer.flipX = flipX;
+            _renderer.flipY = flipY;
             time = 0;
             int i = 0;
             float deltaTime = 1f / fps;

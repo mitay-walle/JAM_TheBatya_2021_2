@@ -7,6 +7,7 @@ namespace Gameplay
 {
     public class GameplayEvents : MonoBehaviour
     {
+        [SerializeField] private Saver _saver;
         [SerializeField] private SwitchableGoParent _ringSwitch;
         [SerializeField] private SwitchableGoParent _phoneSwitch;
         [SerializeField] private Actor.Actor _mother;
@@ -89,6 +90,12 @@ namespace Gameplay
             Intro.SetActive(true);
             IntroScenes.Show(0);
             ActorScenes.SetActive(false);
+        }
+        
+        public void OnRepeatIntroClick()
+        {
+            _saver.Clear();
+            _saver.Load();
         }
     }
 }

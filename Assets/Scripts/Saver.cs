@@ -18,21 +18,23 @@ public class Saver : MonoBehaviour
 
     private void Awake()
     {
-        _gameplay.SetDefaults();
-        
         Finish.OnPlayAction -= Save;
         Finish.OnPlayAction += Save;
 
         Load();
     }
 
-    private void Load()
+    public void Load()
     {
+        _gameplay.SetDefaults();
+
         Debug.Log("Load");
 
         if (!PlayerPrefs.HasKey(INTRO))
         {
             PlayerPrefs.SetInt(INTRO, 0);
+            PlayerPrefs.Save();
+            SkipIntro = false;
         }
         else
         {
@@ -63,6 +65,8 @@ public class Saver : MonoBehaviour
     [Button]
     public void Clear()
     {
+        Debug.Log("Clear");
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
     }
 }

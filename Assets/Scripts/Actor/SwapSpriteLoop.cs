@@ -13,7 +13,9 @@ namespace Actor
         [SerializeField] private int fps = 6;
         [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private SpriteSequence sprites;
-
+        [SerializeField] private bool flipX;
+        [SerializeField] private bool flipY;
+        
         private void OnEnable()
         {
             if (!sprites)
@@ -37,6 +39,9 @@ namespace Actor
 
         IEnumerator LoopCoroutine()
         {
+            _renderer.flipX = flipX;
+            _renderer.flipY = flipY;
+            
             int i = 0;
             float deltaTime = 1f / fps;
 
