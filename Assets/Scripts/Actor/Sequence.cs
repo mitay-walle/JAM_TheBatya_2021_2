@@ -9,6 +9,7 @@ namespace Actor
 {
     public class Sequence : ActorAction
     {
+        [SerializeField] protected bool Debugging;
         public bool IsParent;
         [SerializeField] private bool loop;
 
@@ -16,37 +17,47 @@ namespace Actor
 
         public bool Contains(Sequence sequence) => actions.Contains(sequence);
 
-        public void OnEnable()
+        public void Play()
         {
             transform.root.GetComponentInChildren<Actor>().PlaySequence(this);
         }
 
         protected override IEnumerator OnOnceActionCoroutine(Actor actor)
         {
-            int counter = 0;
             foreach (ActorAction action in actions)
             {
                 action.gameObject.SetActive(false);
             }
-            while (loop || counter == 0)
+            while (true)
             {
                 for (int i = 0; i < actions.Count; i++)
                 {
-                    actions[i].gameObject.SetActive(true);
-                    if (actions[i].PlayNextImmediatly)
+                    if (actions[i] is Sequence seq && seq.IsParent)
                     {
-                        StartCoroutine(actions[i].OnActionCoroutine(actor));
+                        seq.Play();
                     }
                     else
                     {
-                        yield return actions[i].OnActionCoroutine(actor);
+                        actions[i].gameObject.SetActive(true);
+                        if (actions[i].PlayNextImmediatly)
+                        {
+                            actions[i].StartCoroutine(actions[i].OnActionCoroutine(actor));
+                        }
+                        else
+                        {
+                            yield return actions[i].OnActionCoroutine(actor);
+                        }
+                        if (Debugging) Debug.LogError($"action '{actions[i].name}'"); 
                     }
-                    
                 }
 
-                counter++;
+                if (!loop) break;
+                
+                if (Debugging) Debug.LogError($"break");
             }
+            if (Debugging) Debug.LogError($"finish sequence '{name}'");
             gameObject.SetActive(false);
+            yield return null;
         }
 
         [Button(DirtyOnClick = true)]

@@ -5,6 +5,8 @@ namespace UI
 {
     public class TouchInput2D : MonoBehaviour
     {
+        [SerializeField] private bool Debugging;
+        
         public LayerMask touchInputMask;
         private Camera cam;
         private List<GameObject> touchList = new List<GameObject>();
@@ -39,7 +41,7 @@ namespace UI
 
             if (isMouseDown)
             {
-                Debug.Log($"OnTouchDown()");   
+                if (Debugging) Debug.Log($"OnTouchDown()");   
             }
             
             
@@ -53,7 +55,7 @@ namespace UI
                     Vector3 closest = hit.ClosestPoint(mouseWorldPos);
                     if (isMouseDown)
                     {
-                        Debug.Log($"{recipent.name}.OnTouchDown()");
+                        if (Debugging) Debug.Log($"{recipent.name}.OnTouchDown()");
                         recipent.SendMessage(nameof(ITouchReciever.OnTouchDown), closest, reciever);
                     }
 
@@ -69,7 +71,7 @@ namespace UI
                 }
                 else
                 {
-                    Debug.LogError($"OnTouchDown() MISS-CLICK hit == null!");
+                    if (Debugging) Debug.LogError($"OnTouchDown() MISS-CLICK hit == null!");
                 }
                 foreach (GameObject g in touchListOld)
                 {

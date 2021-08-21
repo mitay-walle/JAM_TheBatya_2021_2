@@ -16266,6 +16266,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  Debugging: 0
   IsParent: 1
   loop: 0
   actions:
@@ -16274,6 +16275,7 @@ MonoBehaviour:
   - {fileID: 402064140}
   - {fileID: 1152637703}
   - {fileID: 1781635843}
+  - {fileID: 435065448}
 --- !u!114 &335870645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16281,7 +16283,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335870642}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
   m_Name: 
@@ -16928,6 +16930,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Debugging: 0
   IsParent: 0
   loop: 0
   actions:
@@ -17425,6 +17428,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  Debugging: 0
   IsParent: 1
   loop: 1
   actions:
@@ -17442,7 +17446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435065446}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
   m_Name: 
@@ -28517,10 +28521,10 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 335870642}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 335870644}
+        m_TargetAssemblyTypeName: Actor.Sequence, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31291,6 +31295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9576e9ea8c74de64c9521eba067fd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Debugging: 0
   touchInputMask:
     serializedVersion: 2
     m_Bits: 17
@@ -61547,6 +61552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultSequence: {fileID: 435065448}
+  Debugging: 0
 --- !u!1 &1202787988
 GameObject:
   m_ObjectHideFlags: 0
@@ -69390,6 +69396,7 @@ MonoBehaviour:
   OnActionEnd:
     m_PersistentCalls:
       m_Calls: []
+  Debugging: 0
   IsParent: 0
   loop: 1
   actions:
@@ -75552,6 +75559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultSequence: {fileID: 1748649346}
+  Debugging: 0
 --- !u!1 &2089386638
 GameObject:
   m_ObjectHideFlags: 0
