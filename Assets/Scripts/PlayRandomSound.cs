@@ -18,6 +18,9 @@ public class PlayRandomSound : MonoBehaviour
     private bool _oneShot;
 
     [FoldoutGroup("Settings"), SerializeField]
+    private bool _repeat;
+    
+    [FoldoutGroup("Settings"), SerializeField]
     private bool _randomTime;
 
     [FoldoutGroup("Settings"), SerializeField]
@@ -79,6 +82,11 @@ public class PlayRandomSound : MonoBehaviour
         }
 
         if (_randomTime) AS.time = Random.Range(0, AS.clip.length);
+        
+        if (_repeat)
+        {
+            Invoke(nameof(Play),clip.length - AS.time);
+        }
     }
 
     [Button]

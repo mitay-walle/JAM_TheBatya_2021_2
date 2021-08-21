@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Mother Busy
   m_EditorClassIdentifier: 
   Sprites:
-  - {fileID: -4169587593458272809, guid: 4ea076dd10c94324c97ae58176838f55, type: 3}
+  - {fileID: -7095400223107399781, guid: 4ea076dd10c94324c97ae58176838f55, type: 3}
+  - {fileID: 1257174671240095761, guid: 4ea076dd10c94324c97ae58176838f55, type: 3}
