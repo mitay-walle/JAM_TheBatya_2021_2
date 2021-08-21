@@ -13,7 +13,6 @@ namespace Actor
         [SerializeField] private int fps = 6;
         [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private SpriteSequence sprites;
-        private float time;
 
         private void OnEnable()
         {
@@ -22,7 +21,7 @@ namespace Actor
                 Debug.LogError($"[ SwapSpriteLoop ] {name}.OnEnable() SpriteSequence is null!", this);
                 return;
             }
-            
+
             if (!_renderer)
                 _renderer = transform.root.GetComponentInChildren<SpriteRenderer>();
 
@@ -38,10 +37,10 @@ namespace Actor
 
         IEnumerator LoopCoroutine()
         {
-            time = 0;
             int i = 0;
             float deltaTime = 1f / fps;
-            while (true)
+
+            while (LoopAnimation || i >= sprites.Sprites.Count - 1)
             {
                 if (i < sprites.Sprites.Count)
                 {
@@ -54,7 +53,6 @@ namespace Actor
 
                 i++;
                 if (LoopAnimation && i >= sprites.Sprites.Count) i = 0;
-                time += deltaTime;
                 yield return new WaitForSeconds(deltaTime);
             }
         }
