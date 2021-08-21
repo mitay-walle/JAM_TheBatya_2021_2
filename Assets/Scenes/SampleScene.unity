@@ -5232,6 +5232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -5256,6 +5257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -6045,6 +6047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 631237908}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -6069,6 +6072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -6562,6 +6566,124 @@ MonoBehaviour:
   onResetState: 0
   onTime: {fileID: 0}
   onTimeState: 0
+--- !u!1 &148492751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148492752}
+  - component: {fileID: 148492758}
+  - component: {fileID: 148492757}
+  - component: {fileID: 148492756}
+  - component: {fileID: 148492755}
+  m_Layer: 5
+  m_Name: TextBlob  - ?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &148492752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148492751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 672464151}
+  m_Father: {fileID: 405838529}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -68.79997, y: 90.71997}
+  m_SizeDelta: {x: 85.93751, y: 94.82759}
+  m_Pivot: {x: 0.040727112, y: -0.5666067}
+--- !u!114 &148492755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148492751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c53981ddb6b5e342adab36d07b0b402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StickTo: {fileID: 1161484108}
+  Position: 1
+  WorldToScreen: 1
+  x: 1
+  y: 1
+  z: 0
+  Rotation: 0
+  Scale: 0
+  cachTr: {fileID: 148492752}
+  Simple: 1
+  Late: 0
+  Fixed: 0
+  ComparePositionBeforeChange: 0
+--- !u!114 &148492756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148492751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &148492757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148492751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ead7822756eee7149b9885eb85e24e3e, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &148492758
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148492751}
+  m_CullTransparentMesh: 1
 --- !u!1 &149788697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6779,6 +6901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -6803,6 +6926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -11914,6 +12038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -17007,6 +17132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -17400,6 +17526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1019423993}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -17424,6 +17551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1019423993}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -17518,6 +17646,7 @@ Transform:
   - {fileID: 402064138}
   - {fileID: 1152637702}
   - {fileID: 1781635842}
+  - {fileID: 1162256337}
   m_Father: {fileID: 788474240}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22642,6 +22771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1758842008}
+  - {fileID: 1748486994}
   m_Father: {fileID: 335870643}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22814,6 +22944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -23421,6 +23552,7 @@ RectTransform:
   m_Children:
   - {fileID: 842918259}
   - {fileID: 538120623}
+  - {fileID: 148492752}
   - {fileID: 871743529}
   - {fileID: 1142412020}
   m_Father: {fileID: 0}
@@ -23733,6 +23865,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 491030281}
+  - {fileID: 1226829551}
   m_Father: {fileID: 335870643}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23749,7 +23882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayNextImmediatly: 0
-  PreDelay: 0
+  PreDelay: 0.5
   TimeOnce: 0.5
   PostDelay: 0
   OnAction:
@@ -23780,7 +23913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &435065447
 Transform:
   m_ObjectHideFlags: 0
@@ -23848,7 +23981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RuntimeOnly: 1
+  RuntimeOnly: 0
 --- !u!1 &444275777
 GameObject:
   m_ObjectHideFlags: 0
@@ -23935,6 +24068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -23959,6 +24093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -29093,6 +29228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -29117,6 +29253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -29408,6 +29545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -29432,6 +29570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -29685,6 +29824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -29709,6 +29849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -29903,6 +30044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1019423993}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -29977,6 +30119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1019423993}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -30137,9 +30280,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170.4874, y: 8.66748}
+  m_AnchoredPosition: {x: -68.79997, y: 90.71997}
   m_SizeDelta: {x: 85.9375, y: 94.82758}
-  m_Pivot: {x: 0.1767804, y: -0.28057486}
+  m_Pivot: {x: 0.1767804, y: -0.87}
 --- !u!114 &538120624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30205,14 +30348,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c53981ddb6b5e342adab36d07b0b402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StickTo: {fileID: 0}
+  StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 1
   x: 1
   y: 1
-  z: 1
+  z: 0
   Rotation: 0
   Scale: 0
-  cachTr: {fileID: 0}
+  cachTr: {fileID: 538120623}
   Simple: 1
   Late: 0
   Fixed: 0
@@ -35266,6 +35410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -35290,6 +35435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -36601,6 +36747,503 @@ MonoBehaviour:
   Target: {fileID: 22969821}
   _fromSize: {x: 0, y: 0}
   _toSize: {x: 0, y: 0}
+--- !u!1 &672464150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672464151}
+  - component: {fileID: 672464155}
+  - component: {fileID: 672464154}
+  - component: {fileID: 672464152}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &672464151
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672464150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 148492752}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.13328934, y: -0.02773285}
+  m_SizeDelta: {x: 84.55, y: 128.87}
+  m_Pivot: {x: 0.5692879, y: 0.49540022}
+--- !u!114 &672464152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672464150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38625bd6ec928dc4d9844ac7ca7f838b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    type: 24
+    invert: 0
+    MaxValue: 1
+    Delay: 0.2
+    Period: 0.15
+    PostDelay: 0
+    Speed: 1
+    Fill:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    Color:
+      m_Mode: 2
+      m_GradientMin:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_GradientMax:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_ColorMin: {r: 1, g: 1, b: 1, a: 1}
+      m_ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    uniformScale: 1
+    Position:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rotation:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 1
+        m_CurveMultiplier: 20
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2.0027547
+            outSlope: 2.0027547
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.49931225
+            value: 1
+            inSlope: 0.0027508736
+            outSlope: 0.0027508736
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: -1.997253
+            outSlope: -1.997253
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Scale:
+      X:
+        m_Mode: 1
+        m_CurveMultiplier: 1
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 1.0323623
+            outSlope: 1.0323623
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.4973286
+            value: 1.5134233
+            inSlope: 0.005486369
+            outSlope: 0.005486369
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: -1.0213896
+            outSlope: -1.0213896
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 10
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+    Rect:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    from: {fileID: 0}
+    to: {fileID: 0}
+  child: []
+  next: []
+  AS: {fileID: 0}
+  OnPlay: {fileID: 0}
+  timedTime: 0
+  CanContinue: 0
+  Debugging: 0
+  ResetOnEnable: 1
+  PlayOnEnable: 1
+  DisableOnEnd: 0
+  StopSoundOnEnd: 0
+  Loop: 0
+  Target: {fileID: 672464151}
+  _fromSize: {x: 0, y: 0}
+  _toSize: {x: 0, y: 0}
+--- !u!114 &672464154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672464150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '?'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: bd0d3013e3670f147b61c8d65e2d853a, type: 2}
+  m_sharedMaterial: {fileID: -357382128801657837, guid: bd0d3013e3670f147b61c8d65e2d853a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72.6
+  m_fontSizeBase: 72.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 15
+  m_fontSizeMax: 20
+  m_fontStyle: 17
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 35.32, y: 22, z: 22, w: 34.27}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &672464155
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672464150}
+  m_CullTransparentMesh: 1
 --- !u!1 &694850353
 GameObject:
   m_ObjectHideFlags: 0
@@ -36631,6 +37274,137 @@ Transform:
   m_Father: {fileID: 976434988}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &716240786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716240787}
+  - component: {fileID: 716240791}
+  - component: {fileID: 716240790}
+  - component: {fileID: 716240789}
+  - component: {fileID: 716240788}
+  - component: {fileID: 716240793}
+  m_Layer: 5
+  m_Name: TextBlob - Mother - ?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &716240787
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 799250661}
+  m_Father: {fileID: 1162256337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -68.79997, y: 90.71997}
+  m_SizeDelta: {x: 85.93751, y: 94.82759}
+  m_Pivot: {x: 0.040727112, y: -0.5666067}
+--- !u!114 &716240788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c53981ddb6b5e342adab36d07b0b402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StickTo: {fileID: 1161484108}
+  Position: 1
+  WorldToScreen: 1
+  x: 1
+  y: 1
+  z: 0
+  Rotation: 0
+  Scale: 0
+  cachTr: {fileID: 716240787}
+  Simple: 1
+  Late: 0
+  Fixed: 0
+  ComparePositionBeforeChange: 0
+--- !u!114 &716240789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
+--- !u!114 &716240790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ead7822756eee7149b9885eb85e24e3e, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &716240791
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_CullTransparentMesh: 1
+--- !u!225 &716240793
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716240786}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &737417494
 GameObject:
   m_ObjectHideFlags: 0
@@ -36854,6 +37628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -36977,6 +37752,7 @@ Transform:
   m_Children:
   - {fileID: 435065447}
   - {fileID: 335870643}
+  - {fileID: 1957924747}
   m_Father: {fileID: 489975039}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36995,6 +37771,7 @@ MonoBehaviour:
   Gos:
   - {fileID: 435065449}
   - {fileID: 335870645}
+  - {fileID: 1957924749}
   EnableOnStart: 0
 --- !u!1 &797444158
 GameObject:
@@ -37050,6 +37827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -37112,6 +37890,503 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797444158}
+  m_CullTransparentMesh: 1
+--- !u!1 &799250660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799250661}
+  - component: {fileID: 799250664}
+  - component: {fileID: 799250663}
+  - component: {fileID: 799250662}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &799250661
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799250660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 716240787}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.13328934, y: -0.02773285}
+  m_SizeDelta: {x: 84.55, y: 128.87}
+  m_Pivot: {x: 0.5692879, y: 0.49540022}
+--- !u!114 &799250662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799250660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38625bd6ec928dc4d9844ac7ca7f838b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    type: 24
+    invert: 0
+    MaxValue: 1
+    Delay: 0
+    Period: 0.2
+    PostDelay: 0
+    Speed: 1
+    Fill:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    Color:
+      m_Mode: 2
+      m_GradientMin:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_GradientMax:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_ColorMin: {r: 1, g: 1, b: 1, a: 1}
+      m_ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    uniformScale: 1
+    Position:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rotation:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 1
+        m_CurveMultiplier: 20
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2.0027547
+            outSlope: 2.0027547
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.49931225
+            value: 1
+            inSlope: 0.0027508736
+            outSlope: 0.0027508736
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: -1.997253
+            outSlope: -1.997253
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Scale:
+      X:
+        m_Mode: 1
+        m_CurveMultiplier: 1
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 1.0323623
+            outSlope: 1.0323623
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.4973286
+            value: 1.5134233
+            inSlope: 0.005486369
+            outSlope: 0.005486369
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: -1.0213896
+            outSlope: -1.0213896
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 10
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+    Rect:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    from: {fileID: 0}
+    to: {fileID: 0}
+  child: []
+  next: []
+  AS: {fileID: 0}
+  OnPlay: {fileID: 0}
+  timedTime: 0
+  CanContinue: 0
+  Debugging: 0
+  ResetOnEnable: 0
+  PlayOnEnable: 0
+  DisableOnEnd: 0
+  StopSoundOnEnd: 0
+  Loop: 0
+  Target: {fileID: 799250661}
+  _fromSize: {x: 0, y: 0}
+  _toSize: {x: 0, y: 0}
+--- !u!114 &799250663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799250660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '?'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: bd0d3013e3670f147b61c8d65e2d853a, type: 2}
+  m_sharedMaterial: {fileID: -357382128801657837, guid: bd0d3013e3670f147b61c8d65e2d853a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72.6
+  m_fontSizeBase: 72.6
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 15
+  m_fontSizeMax: 20
+  m_fontStyle: 17
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 35.32, y: 22, z: 22, w: 34.27}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &799250664
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799250660}
   m_CullTransparentMesh: 1
 --- !u!1 &811781792
 GameObject:
@@ -37306,6 +38581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -37511,6 +38787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -37569,6 +38846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -37593,6 +38871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -37773,7 +39052,7 @@ RectTransform:
   m_Children:
   - {fileID: 548422073}
   m_Father: {fileID: 405838529}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37794,6 +39073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 1
@@ -38992,6 +40272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -39237,6 +40518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -55256,6 +56538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -55840,6 +57123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -56000,6 +57284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -80011,7 +81296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1142412020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -80025,7 +81310,7 @@ RectTransform:
   m_Children:
   - {fileID: 2101821717}
   m_Father: {fileID: 405838529}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -80137,6 +81422,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultSequence: {fileID: 435065448}
   Debugging: 0
+--- !u!1 &1162256336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162256337}
+  - component: {fileID: 1162256341}
+  - component: {fileID: 1162256339}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1162256337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162256336}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 716240787}
+  m_Father: {fileID: 335870643}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.841, y: -2.402}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1162256339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162256336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b22218bdb5be9547bbba4c194b92584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1162256341
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162256336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 410323011}
+  m_PlaneDistance: 2.11
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: -1275985345
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1164833188
 GameObject:
   m_ObjectHideFlags: 3
@@ -81243,6 +82610,375 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220598656}
   m_CullTransparentMesh: 1
+--- !u!1 &1226829550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226829551}
+  - component: {fileID: 1226829553}
+  - component: {fileID: 1226829552}
+  m_Layer: 0
+  m_Name: Show Blob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226829551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226829550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433303567}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &1226829552
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226829550}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1226829553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226829550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebfee5c7dee4b9b822ec87b9cf4a6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    type: 18
+    invert: 0
+    MaxValue: 1
+    Delay: 0
+    Period: 0.15
+    PostDelay: 0
+    Speed: 1
+    Fill:
+      m_Mode: 1
+      m_CurveMultiplier: 1
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 1
+    Color:
+      m_Mode: 2
+      m_GradientMin:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_GradientMax:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_ColorMin: {r: 1, g: 1, b: 1, a: 1}
+      m_ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    uniformScale: 1
+    Position:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rotation:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Scale:
+      X:
+        m_Mode: 1
+        m_CurveMultiplier: 1
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rect:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    from: {fileID: 0}
+    to: {fileID: 0}
+  child: []
+  next:
+  - {fileID: 799250662}
+  AS: {fileID: 0}
+  OnPlay: {fileID: 0}
+  timedTime: 0
+  CanContinue: 0
+  Debugging: 0
+  ResetOnEnable: 1
+  PlayOnEnable: 1
+  DisableOnEnd: 0
+  StopSoundOnEnd: 0
+  Loop: 0
+  Target: {fileID: 716240793}
 --- !u!1 &1230436134
 GameObject:
   m_ObjectHideFlags: 0
@@ -82525,6 +84261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -82549,6 +84286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -83039,6 +84777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -83063,6 +84802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -83256,6 +84996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -83280,6 +85021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -93363,6 +95105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -93387,6 +95130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -93815,6 +95559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -94068,6 +95813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -94894,6 +96640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -94918,6 +96665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -95111,6 +96859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -95135,6 +96884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -95328,6 +97078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -95352,6 +97103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -95498,6 +97250,374 @@ MonoBehaviour:
   _volume: {x: 1, y: 1}
   _usePitch: 0
   _pitch: {x: 1, y: 1}
+--- !u!1 &1748486993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748486994}
+  - component: {fileID: 1748486996}
+  - component: {fileID: 1748486995}
+  m_Layer: 0
+  m_Name: Hide Blob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748486994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748486993}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 350709895}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &1748486995
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748486993}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1748486996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748486993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebfee5c7dee4b9b822ec87b9cf4a6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    type: 18
+    invert: 1
+    MaxValue: 1
+    Delay: 0
+    Period: 0.15
+    PostDelay: 0
+    Speed: 1
+    Fill:
+      m_Mode: 1
+      m_CurveMultiplier: 1
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 1
+    Color:
+      m_Mode: 2
+      m_GradientMin:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_GradientMax:
+        serializedVersion: 2
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 0}
+        key3: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_Mode: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      m_ColorMin: {r: 1, g: 1, b: 1, a: 1}
+      m_ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    uniformScale: 1
+    Position:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rotation:
+      X:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Scale:
+      X:
+        m_Mode: 1
+        m_CurveMultiplier: 1
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 1
+      Y:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+      Z:
+        m_Mode: 0
+        m_CurveMultiplier: 0
+        m_CurveMin:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_CurveMax:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_ConstantMin: 0
+        m_ConstantMax: 0
+    Rect:
+      m_Mode: 0
+      m_CurveMultiplier: 0
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 0
+    from: {fileID: 0}
+    to: {fileID: 0}
+  child: []
+  next: []
+  AS: {fileID: 0}
+  OnPlay: {fileID: 0}
+  timedTime: 0
+  CanContinue: 0
+  Debugging: 0
+  ResetOnEnable: 1
+  PlayOnEnable: 1
+  DisableOnEnd: 0
+  StopSoundOnEnd: 0
+  Loop: 0
+  Target: {fileID: 716240793}
 --- !u!1 &1748649344
 GameObject:
   m_ObjectHideFlags: 0
@@ -95618,6 +97738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -95642,6 +97763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -101007,6 +103129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -101031,6 +103154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 1161484108}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -101299,6 +103423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -101323,6 +103448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 0}
   Position: 1
+  WorldToScreen: 0
   x: 1
   y: 1
   z: 0
@@ -101508,6 +103634,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1957924746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1957924747}
+  - component: {fileID: 1957924748}
+  - component: {fileID: 1957924749}
+  m_Layer: 0
+  m_Name: 'Death Phone + RIng '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1957924747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957924746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788474240}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957924748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957924746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32dcc5f8434101a42971347ff3444134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayNextImmediatly: 0
+  PreDelay: 0
+  TimeOnce: 1
+  PostDelay: 0
+  OnAction:
+    m_PersistentCalls:
+      m_Calls: []
+  OnActionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  Debugging: 0
+  actor: {fileID: 0}
+  IsParent: 0
+  loop: 0
+  actions: []
+--- !u!114 &1957924749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957924746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec11d5f6042f554385eb5a3220400a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RuntimeOnly: 0
 --- !u!1 &1968391609
 GameObject:
   m_ObjectHideFlags: 0
@@ -101578,6 +103776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -104116,6 +106315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StickTo: {fileID: 883090145}
   Position: 1
+  WorldToScreen: 0
   x: 0
   y: 0
   z: 1
@@ -109104,9 +111304,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 884.11316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137678450
 MonoBehaviour:

@@ -8,6 +8,7 @@ namespace Plugins
         public Transform StickTo;
 
         [Header("Settings"),SerializeField] protected bool Position = true;
+        [SerializeField] protected bool WorldToScreen = false;
         [SerializeField] protected bool x = true;
         [SerializeField] protected bool y = true;
         [SerializeField] protected bool z = true;
@@ -83,10 +84,17 @@ namespace Plugins
             Vector3 pos = StickTo.position;
             Vector3 posBefore = cachTr.position;
 
+            if (WorldToScreen)
+            {
+                pos = Camera.main.WorldToScreenPoint (pos);
+            }
+            
             if (!x) pos.x = posBefore.x;
             if (!y) pos.y = posBefore.y;
             if (!z) pos.z = posBefore.z;
 
+            
+            
             cachTr.position = pos;
         }
     }
