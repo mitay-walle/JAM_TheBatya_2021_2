@@ -32,10 +32,22 @@ public class PlayRandomSound : MonoBehaviour
     [ShowIf(nameof(_usePitch)), FoldoutGroup("Settings"), SerializeField]
     private Vector2 _pitch = Vector2.one;
 
-
+    [FoldoutGroup("Settings"), SerializeField]
+    private Vector2 _delay;
+    
     void OnEnable()
     {
-        if (_playOnEnable) Play();
+        if (_playOnEnable)
+        {
+            if (_delay.x > 0 || _delay.y > 0)
+            {
+                Invoke(nameof(Play), _delay.Random());
+            }
+            else
+            {
+                Play();
+            }
+        }
     }
 
     [Button(ButtonSizes.Large)]
@@ -47,7 +59,7 @@ public class PlayRandomSound : MonoBehaviour
         if (_usePitch) AS.pitch = _pitch.Random();
 
         AudioClip clip = AS.clip;
-        
+
         if (_clips != null && _clips.Length > 0)
         {
             clip = _clips.Random();

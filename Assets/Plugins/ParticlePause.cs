@@ -25,11 +25,19 @@ namespace Plugins
         IEnumerator ExecuteCor()
         {
             ParticleSystem fx = GetComponent<ParticleSystem>();
+            
+            fx.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
             fx.Play();
-            fx.Simulate(0, true, true);
-            if (!_instant) yield return new WaitForSeconds(_time);
+            
+            if (_instant)
+            {
+                fx.Simulate(_time, true, false);
+            }
+            else
+            {
+                yield return new WaitForSeconds(_time);
+            }
 
-            fx.Simulate(_time, true, false);
             fx.Pause();
         }
     }

@@ -1,9 +1,12 @@
 ﻿using Plugins.Pulsating;
+using Sirenix.OdinInspector;
 
 namespace Plugins.Own.Animated
 {
     public class AnimatedPulsating : AnimatedGeneric<Pulsating_Base>
     {
+        [FoldoutGroup("Settings")] private bool _disablePulsatingOnFinish;
+        
         public override bool Play()
         {
             if (Target) Target.Enable();
@@ -25,7 +28,7 @@ namespace Plugins.Own.Animated
         protected override void InvokeOnFinish()
         {
             base.InvokeOnFinish();
-            Target.Enable(false,finishAlpha:0f);
+            if (_disablePulsatingOnFinish) Target.Enable(false,finishAlpha:0f);
         }
 
         protected override void OnStop()

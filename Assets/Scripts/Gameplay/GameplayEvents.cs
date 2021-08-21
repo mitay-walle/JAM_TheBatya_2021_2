@@ -9,9 +9,13 @@ namespace Gameplay
     {
         [SerializeField] private SwitchableGoParent _ringSwitch;
         [SerializeField] private SwitchableGoParent _phoneSwitch;
+        [SerializeField] private Actor.Actor _mother;
         [SerializeField] private Sequence _phoneSequence;
+        [SerializeField] private Sequence _deathRingSequence;
 
         [ShowInInspector] private bool _isRingInWater;
+
+        #region Phone
 
         public void OnPhoneClick()
         {
@@ -43,6 +47,20 @@ namespace Gameplay
                 _phoneSwitch.Show(2);
             }
         }
+        
+        public void OnPhoneSeqFinish()
+        {
+            if (!_isRingInWater)
+            {
+                _mother.PlayDefaultSequence();
+            }
+            else
+            {
+                _deathRingSequence.Play();
+            }
+        }
+
+        #endregion
 
         public void OnRingClick()
         {

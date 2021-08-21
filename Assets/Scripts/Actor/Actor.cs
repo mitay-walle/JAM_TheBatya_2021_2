@@ -11,9 +11,13 @@ namespace Actor
         private void OnEnable()
         {
             current = null;
-            PlaySequence(DefaultSequence);
+            PlayDefaultSequence();
         }
 
+        public void PlayDefaultSequence()
+        {
+            PlaySequence(DefaultSequence);
+        }
         public void PlaySequence(Sequence sequence)
         {
             if (Debugging) Debug.Log($"PlaySequence '{sequence.name}'");

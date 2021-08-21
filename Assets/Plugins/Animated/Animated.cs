@@ -332,6 +332,7 @@ namespace Plugins.Own.Animated
         {
             if (HasFinishAction) OnFinish();
             OnFinishAction?.Invoke();
+            if (StopSoundOnEnd) StopSound();
         }
 
         protected virtual void OnDisable()
