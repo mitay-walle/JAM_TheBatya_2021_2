@@ -2,6 +2,7 @@ using Actor;
 using Plugins.Switchable;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Gameplay
 {
@@ -62,12 +63,24 @@ namespace Gameplay
             _knifeWaterOnFloorObject.SetActive(false);
         }
 
-        public void OnRepeatIntroClick()
+        public void OnReplayClick()
         {
-            _saver.Clear();
-            _saver.Load();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
+        public void OnResetSaveClick()
+        {
+            _saver.Clear();
+            OnReplayClick();
+        }
+
+        
+        public void OnRepeatIntroClick()
+        {
+            _saver.ClearIntro();
+            _saver.Load();
+        }
+        
         #endregion
 
         #region Phone & Ring

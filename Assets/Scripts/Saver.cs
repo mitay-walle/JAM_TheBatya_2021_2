@@ -82,10 +82,18 @@ public class Saver : MonoBehaviour
     }
 
     [Button]
+    public void ClearIntro()
+    {
+        if (PlayerPrefs.HasKey(INTRO)) PlayerPrefs.DeleteKey(INTRO);
+    }
+    [Button]
     public void Clear()
     {
         Debug.Log("Clear");
-        PlayerPrefs.DeleteAll();
+        for (int i = 0; i < 3; i++)
+        {
+            PlayerPrefs.DeleteKey(i.ToString());
+        }
         PlayerPrefs.Save();
     }
 }
