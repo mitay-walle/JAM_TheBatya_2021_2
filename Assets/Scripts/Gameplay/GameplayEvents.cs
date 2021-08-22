@@ -69,7 +69,7 @@ namespace Gameplay
 
         public void OnPhoneClick()
         {
-            if (!_isRingInWater && _isKnifeAndWaterOnFloor)
+            if (!_isRingInWater && !_isKnifeAndWaterOnFloor)
             {
                 _phoneSequence.Play();
             }
