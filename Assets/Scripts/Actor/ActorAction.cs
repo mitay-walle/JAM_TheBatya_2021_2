@@ -9,6 +9,8 @@ namespace Actor
 {
     public abstract class ActorAction : MonoBehaviour, IHierarchyIconBehaviour
     {
+        [SerializeField] protected bool Debugging;
+
         public bool PlayNextImmediatly;
         [HorizontalGroup("Time",LabelWidth = 60)]public float PreDelay;
         [HorizontalGroup("Time",LabelWidth = 60)]public float TimeOnce = 1;
@@ -27,6 +29,7 @@ namespace Actor
             isActive = true;
             yield return new WaitForSeconds(PreDelay);
 
+            if (Debugging) Debug.Log($"action '{name}' OnAction.Invoke()"); 
             OnAction?.Invoke();
             yield return OnOnceActionCoroutine(actor);
 
@@ -39,7 +42,11 @@ namespace Actor
 
         private void OnDisable()
         {
-            if (isActive) OnActionInterrupt?.Invoke();
+            if (isActive)
+            {
+                if (Debugging) Debug.Log($"action '{name}' interrupt! OnActionInterrupt.Invoke()");
+                OnActionInterrupt?.Invoke();
+            }
         }
 
         protected abstract IEnumerator OnOnceActionCoroutine(Actor actor);

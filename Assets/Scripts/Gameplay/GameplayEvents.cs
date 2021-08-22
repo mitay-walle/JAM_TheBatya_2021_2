@@ -22,6 +22,8 @@ namespace Gameplay
         [SerializeField] private Sequence _removeWaterSequence;
         [SerializeField] private Sequence _removeKnifeSequence;
         [SerializeField] private Sequence _deathKnifeSequence;
+        [SerializeField] private Sequence[] _FridgeSequences;
+        [SerializeField] private Sequence _deathFridgeSequence;
 
         // Defaults
 
@@ -33,8 +35,11 @@ namespace Gameplay
         [ShowInInspector] private bool _isRingInWater;
         [ShowInInspector] private bool _isKnifeOnFloor;
         [ShowInInspector] private bool _isWaterOnFloor;
+        [ShowInInspector] private bool _isFridgeMortal;
+        [ShowInInspector] private bool _isFridgeMortalFinished;
 
         private bool _isKnifeAndWaterOnFloor => _isWaterOnFloor && _isKnifeOnFloor;
+        private int _fridgeClickIndex;
 
         #endregion
 
@@ -199,6 +204,44 @@ namespace Gameplay
         {
             _knifeWaterOnFloorObject.SetActive(true);
             _phoneSwitch.Show(2);
+        }
+
+        #endregion
+
+        #region Fridge
+
+        public void TryOpenFridge()
+        {
+            if (_isFridgeMortal)
+            {
+                OnFridgeSecondClick();
+            }
+        }
+        
+        public void OnFridgeFirstClick()
+        {
+            _isFridgeMortal = true;
+        }
+        
+        public void OnFridgeSecondClick()
+        {
+            _FridgeSequences[_fridgeClickIndex].Play();
+            _fridgeClickIndex++;
+        }
+
+        public void OnFridgeSequenceFinish()
+        {
+            if (_isFridgeMortalFinished) return;
+            
+            _fridgeClickIndex = 0;
+            _mother.PlayDefaultSequence();
+            _isFridgeMortal = false;
+        }
+
+        public void OnFridgeTripleClick()
+        {
+            _isFridgeMortalFinished = true;
+            _deathFridgeSequence.Play();
         }
 
         #endregion

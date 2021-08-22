@@ -9,7 +9,6 @@ namespace Actor
 {
     public class Sequence : ActorAction
     {
-        [SerializeField] protected bool Debugging;
         [SerializeField] protected Actor actor;
         public bool IsParent;
 

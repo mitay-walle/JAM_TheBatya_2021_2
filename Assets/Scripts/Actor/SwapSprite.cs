@@ -7,7 +7,6 @@ namespace Actor
 {
     public class SwapSprite : ActorAction
     {
-        [SerializeField] private bool Debugging;
         [SerializeField] private bool LoopAnimation = true;
         [SerializeField] private bool flipX;
         [SerializeField] private bool flipY;
