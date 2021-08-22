@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Plugins
 {
@@ -79,6 +80,7 @@ namespace Plugins
             if (Scale) cachTr.localScale = StickTo.localScale;
         }
 
+        [Button]
         public virtual void ForceStickPosition()
         {
             Vector3 pos = StickTo.position;
