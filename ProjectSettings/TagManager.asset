@@ -50,9 +50,12 @@ TagManager:
   - name: FX
     uniqueID: 3368923683
     locked: 0
-  - name: UI
-    uniqueID: 3018981951
-    locked: 0
   - name: Actors
     uniqueID: 3481659065
+    locked: 0
+  - name: Actor FX
+    uniqueID: 982285315
+    locked: 0
+  - name: UI
+    uniqueID: 3018981951
     locked: 0
