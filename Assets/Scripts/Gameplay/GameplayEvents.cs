@@ -242,6 +242,7 @@ namespace Gameplay
         {
             _isFridgeMortalFinished = true;
             _deathFridgeSequence.Play();
+            _phoneSwitch.Show(2);
         }
 
         #endregion
