@@ -198,6 +198,7 @@ namespace Gameplay
         private void OnKnifeWaterLastClick()
         {
             _knifeWaterOnFloorObject.SetActive(true);
+            _phoneSwitch.Show(2);
         }
 
         #endregion
