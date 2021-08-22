@@ -114,6 +114,7 @@ namespace Gameplay
         {
             if (!_isRingInWater) _ringSwitch.Show(2);
             _isRingInWater = true;
+            _phoneSwitch.Show(2);
         }
 
         #endregion
