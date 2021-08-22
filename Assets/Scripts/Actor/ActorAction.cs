@@ -16,7 +16,8 @@ namespace Actor
 
         [FoldoutGroup("Events")]public UnityEvent OnAction;
         [FoldoutGroup("Events")]public UnityEvent OnActionEnd;
-
+        [SerializeField] protected bool disableOnFinish = true;
+        
         public virtual IEnumerator OnActionCoroutine(Actor actor)
         {
             yield return new WaitForSeconds(PreDelay);
@@ -28,7 +29,7 @@ namespace Actor
 
             yield return new WaitForSeconds(PostDelay);
 
-            gameObject.SetActive(false);
+            if (disableOnFinish) gameObject.SetActive(false);
         }
 
         protected abstract IEnumerator OnOnceActionCoroutine(Actor actor);

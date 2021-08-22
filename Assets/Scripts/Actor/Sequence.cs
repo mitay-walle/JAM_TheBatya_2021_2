@@ -12,6 +12,7 @@ namespace Actor
         [SerializeField] protected bool Debugging;
         [SerializeField] protected Actor actor;
         public bool IsParent;
+
         [SerializeField] private bool loop;
 
         [SerializeField] private List<ActorAction> actions = new List<ActorAction>();
@@ -69,7 +70,7 @@ namespace Actor
             }
 
             if (Debugging) Debug.LogError($"finish sequence '{name}'");
-            gameObject.SetActive(false);
+            if (disableOnFinish) gameObject.SetActive(false);
             yield return null;
         }
 
