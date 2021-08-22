@@ -16,10 +16,15 @@ namespace Actor
 
         [FoldoutGroup("Events")]public UnityEvent OnAction;
         [FoldoutGroup("Events")]public UnityEvent OnActionEnd;
+        [FoldoutGroup("Events")]public UnityEvent OnActionInterrupt;
+        
         [SerializeField] protected bool disableOnFinish = true;
+        
+        protected bool isActive;
         
         public virtual IEnumerator OnActionCoroutine(Actor actor)
         {
+            isActive = true;
             yield return new WaitForSeconds(PreDelay);
 
             OnAction?.Invoke();
@@ -28,8 +33,13 @@ namespace Actor
             OnActionEnd?.Invoke();
 
             yield return new WaitForSeconds(PostDelay);
-
+            isActive = false;
             if (disableOnFinish) gameObject.SetActive(false);
+        }
+
+        private void OnDisable()
+        {
+            if (isActive) OnActionInterrupt?.Invoke();
         }
 
         protected abstract IEnumerator OnOnceActionCoroutine(Actor actor);
