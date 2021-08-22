@@ -120,6 +120,7 @@ namespace Gameplay
             if (!_isRingInWater) _ringSwitch.Show(2);
             _isRingInWater = true;
             _phoneSwitch.Show(2);
+            SaveDeath(0);
         }
 
         #endregion
@@ -204,6 +205,7 @@ namespace Gameplay
         {
             _knifeWaterOnFloorObject.SetActive(true);
             _phoneSwitch.Show(2);
+            SaveDeath(1);
         }
 
         #endregion
@@ -243,6 +245,13 @@ namespace Gameplay
             _isFridgeMortalFinished = true;
             _deathFridgeSequence.Play();
             _phoneSwitch.Show(2);
+            
+            SaveDeath(2);
+        }
+
+        public void SaveDeath(int index)
+        {
+            _saver.SaveDeath(index);
         }
 
         #endregion

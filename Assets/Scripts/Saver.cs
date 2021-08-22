@@ -14,7 +14,7 @@ public class Saver : MonoBehaviour
     [SerializeField] private SwitchableGoParent _switch;
     [SerializeField] private int _skipIndex = 2;
     [SerializeField] private GameplayEvents _gameplay;
-
+    [SerializeField] private GameObject[] _deathIndicators;
 
     private void Awake()
     {
@@ -22,6 +22,19 @@ public class Saver : MonoBehaviour
         Finish.OnPlayAction += Save;
 
         Load();
+    }
+
+    private bool HasDeath(int index) => PlayerPrefs.HasKey(index.ToString());
+
+    public void SaveDeath(int index)
+    {
+        string key = index.ToString();
+
+        PlayerPrefs.SetInt(key, 1);
+
+        PlayerPrefs.Save();
+
+        _deathIndicators[index].SetActive(true);
     }
 
     public void Load()
@@ -55,7 +68,13 @@ public class Saver : MonoBehaviour
             _switch.Show(0);
             Scene1.Play();
         }
+
+        for (int i = 0; i < 3; i++)
+        {
+            _deathIndicators[i].SetActive(HasDeath(i));
+        }
     }
+
 
     public void Save()
     {
