@@ -41,11 +41,11 @@ namespace Actor
         {
             _renderer.flipX = flipX;
             _renderer.flipY = flipY;
-            
+
             int i = 0;
             float deltaTime = 1f / fps;
 
-            while (LoopAnimation || i >= sprites.Sprites.Count - 1)
+            while (LoopAnimation || i < sprites.Sprites.Count)
             {
                 if (i < sprites.Sprites.Count)
                 {
