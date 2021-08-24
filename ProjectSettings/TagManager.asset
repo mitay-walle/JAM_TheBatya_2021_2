@@ -59,3 +59,6 @@ TagManager:
   - name: UI
     uniqueID: 3018981951
     locked: 0
+  - name: Walls Front
+    uniqueID: 1115426257
+    locked: 0
