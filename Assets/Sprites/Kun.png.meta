@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: fa2ee23c235809045a875caaa411322c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8626936944457616961
+    second: Kun_0
+  - first:
+      213: 9202053162146889130
+    second: Kun_1
+  - first:
+      213: -5349273288972690218
+    second: Kun_2
+  - first:
+      213: 8378064997336728993
+    second: Kun_3
+  - first:
+      213: -1658436467448546676
+    second: Kun_4
+  - first:
+      213: -8092179067511361934
+    second: Kun_5
+  - first:
+      213: 443694556891212580
+    second: Kun_6
+  - first:
+      213: -4121308218196433560
+    second: Kun_7
+  - first:
+      213: -1983016439544051593
+    second: Kun_8
+  - first:
+      213: 6181655661998742705
+    second: Kun_9
+  - first:
+      213: 1687755154832805705
+    second: Kun_10
+  - first:
+      213: -3679457515531974450
+    second: Kun_11
+  - first:
+      213: 6635795433228160304
+    second: Kun_12
+  - first:
+      213: 1801642975305353921
+    second: Kun_13
+  - first:
+      213: 1371809039605903516
+    second: Kun_14
+  - first:
+      213: 1061103332459921344
+    second: Kun_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,7 +173,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kun_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 104
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e071a817909b770800000000000000
+      internalID: 8626936944457616961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 104
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad760ea89244bf70800000000000000
+      internalID: 9202053162146889130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 104
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc1c4c094093c5b0800000000000000
+      internalID: -5349273288972690218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 104
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5c367e9bdd44470800000000000000
+      internalID: 8378064997336728993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 104
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8afc23d1dc0cf8e0800000000000000
+      internalID: -1658436467448546676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 70
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e2226230ec2bf80800000000000000
+      internalID: -8092179067511361934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 70
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b664449d1582600800000000000000
+      internalID: 443694556891212580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 70
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865e08cd20c2ec6c0800000000000000
+      internalID: -4121308218196433560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_8
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 70
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77887310e09ea74e0800000000000000
+      internalID: -1983016439544051593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc9731a217a9c550800000000000000
+      internalID: 6181655661998742705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_10
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 36
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fc4a70f5c1c6710800000000000000
+      internalID: 1687755154832805705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_11
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8439c52e0ffecc0800000000000000
+      internalID: -3679457515531974450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 36
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d49bfd9c4171c50800000000000000
+      internalID: 6635795433228160304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 36
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca47239db8b00910800000000000000
+      internalID: 1801642975305353921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c903169ad05a90310800000000000000
+      internalID: 1371809039605903516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kun_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfb141ebdbc9be00800000000000000
+      internalID: 1061103332459921344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
