@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15c46711a28dc84cbb965459f9ff0bd, type: 3}
+  m_Name: Boy Move Bot
+  m_EditorClassIdentifier: 
+  Sprites:
+  - {fileID: 8626936944457616961, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: 9202053162146889130, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: -5349273288972690218, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: 9202053162146889130, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: 8626936944457616961, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: 8378064997336728993, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: -1658436467448546676, guid: fa2ee23c235809045a875caaa411322c, type: 3}
+  - {fileID: 8378064997336728993, guid: fa2ee23c235809045a875caaa411322c, type: 3}
