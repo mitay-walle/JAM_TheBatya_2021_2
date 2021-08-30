@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mother Death Knife
   m_EditorClassIdentifier: 
   Sprites:
-  - {fileID: -9194010270400373265, guid: b8e08d789eccab44e9e053b792900981, type: 3}
-  - {fileID: 2218032561936896405, guid: b8e08d789eccab44e9e053b792900981, type: 3}
-  - {fileID: 794461569670994507, guid: b8e08d789eccab44e9e053b792900981, type: 3}
-  - {fileID: 4494359836712347367, guid: b8e08d789eccab44e9e053b792900981, type: 3}
+  - {fileID: -2308182191198832450, guid: 1122d4748667e66409d3befcea50b208, type: 3}
+  - {fileID: -6885460257118689075, guid: 1122d4748667e66409d3befcea50b208, type: 3}
+  - {fileID: -1682025062377194975, guid: 1122d4748667e66409d3befcea50b208, type: 3}
+  - {fileID: 7531330034044368371, guid: 1122d4748667e66409d3befcea50b208, type: 3}
