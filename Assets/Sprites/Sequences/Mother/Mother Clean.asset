@@ -15,3 +15,5 @@ MonoBehaviour:
   Sprites:
   - {fileID: 5220271204929096137, guid: ec35fd38336354de7bf43cd46ca0b154, type: 3}
   - {fileID: 8817299366628838969, guid: ec35fd38336354de7bf43cd46ca0b154, type: 3}
+  - {fileID: 5220271204929096137, guid: ec35fd38336354de7bf43cd46ca0b154, type: 3}
+  - {fileID: 6563787797323290811, guid: ec35fd38336354de7bf43cd46ca0b154, type: 3}
